@@ -10,6 +10,11 @@
       "StackName": "amplify-lxjproject-dev-143651",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:047403811176:stack/amplify-lxjproject-dev-143651/57eee8c0-e8ab-11ed-bfb6-0ec47f5f3dcf",
       "AmplifyAppId": "d3r7qylar11lra"
+    },
+    "categories": {
+      "auth": {
+        "lxjproject7d68c0a7": {}
+      }
     }
   }
 }
