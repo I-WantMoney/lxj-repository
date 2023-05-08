@@ -51,7 +51,24 @@
       "service": "Cognito"
     }
   },
-  "geo": {},
+  "geo": {
+    "map83905fe4": {
+      "accessType": "AuthorizedUsers",
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "lxjproject7d68c0a7"
+        }
+      ],
+      "isDefault": true,
+      "mapStyle": "VectorHereExplore",
+      "providerPlugin": "awscloudformation",
+      "service": "Map"
+    }
+  },
   "predictions": {
     "interpretText0095be57": {
       "interpretType": "interpretText",
