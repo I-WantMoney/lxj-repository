@@ -14,7 +14,11 @@ import '@aws-amplify/ui-vue/styles.css';
 // Amplify Predictions
 import { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
 Amplify.addPluggable(new AmazonAIPredictionsProvider());
-// ↑↑↑↑↑↑
+//
+
+// Amplify Geo
+import 'maplibre-gl/dist/maplibre-gl.css'
+import '@maplibre/maplibre-gl-geocoder/dist/maplibre-gl-geocoder.css'
 
 const app = createApp(App);
 app.config.productionTip = false;
