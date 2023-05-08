@@ -17,6 +17,9 @@
       },
       "api": {
         "lxjproject": {}
+      },
+      "predictions": {
+        "translateText719c57ac": {}
       }
     }
   }
