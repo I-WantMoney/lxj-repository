@@ -1,6 +1,6 @@
 {
-    "resourceName": "speechGenerator6caebe87",
-    "convertPolicyName": "speechGeneratorPolicy6caebe87",
+    "resourceName": "speechGeneratord0e50bae",
+    "convertPolicyName": "speechGeneratorPolicyd0e50bae",
     "authRoleName": {
         "Ref": "AuthRoleName"
     },
@@ -9,6 +9,6 @@
     },
     "convertType": "speechGenerator",
     "language": "ja-JP",
-    "voice": "Mizuki",
+    "voice": "Takumi",
     "access": "auth"
 }

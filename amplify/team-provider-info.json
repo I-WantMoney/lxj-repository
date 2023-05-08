@@ -19,7 +19,9 @@
         "lxjproject": {}
       },
       "predictions": {
-        "translateText719c57ac": {}
+        "translateTextaf41735b": {},
+        "interpretText0095be57": {},
+        "speechGeneratord0e50bae": {}
       }
     }
   }

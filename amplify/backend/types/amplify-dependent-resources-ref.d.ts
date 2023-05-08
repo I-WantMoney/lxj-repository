@@ -16,33 +16,17 @@ export type AmplifyDependentResourcesAttributes = {
       "UserPoolName": "string"
     }
   },
-  "geo": {
-    "mapf6ca5ac7": {
-      "Arn": "string",
-      "Name": "string",
-      "Region": "string",
-      "Style": "string"
-    }
-  },
   "predictions": {
-    "identifyLabelsebddad5b": {
+    "interpretText0095be57": {
       "region": "string",
       "type": "string"
     },
-    "identifyText832e7774": {
-      "format": "string",
-      "region": "string"
-    },
-    "interpretText5fdabf67": {
-      "region": "string",
-      "type": "string"
-    },
-    "speechGenerator6caebe87": {
+    "speechGeneratord0e50bae": {
       "language": "string",
       "region": "string",
       "voice": "string"
     },
-    "translateText719c57ac": {
+    "translateTextaf41735b": {
       "region": "string",
       "sourceLang": "string",
       "targetLang": "string"

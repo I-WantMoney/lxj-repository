@@ -51,48 +51,19 @@
       "service": "Cognito"
     }
   },
-  "geo": {
-    "mapf6ca5ac7": {
-      "accessType": "AuthorizedUsers",
-      "dependsOn": [
-        {
-          "attributes": [
-            "UserPoolId"
-          ],
-          "category": "auth",
-          "resourceName": "lxjproject7d68c0a7"
-        }
-      ],
-      "isDefault": true,
-      "mapStyle": "VectorHereExplore",
-      "providerPlugin": "awscloudformation",
-      "service": "Map"
-    }
-  },
+  "geo": {},
   "predictions": {
-    "identifyLabelsebddad5b": {
-      "dependsOn": [],
-      "identifyType": "identifyLabels",
-      "providerPlugin": "awscloudformation",
-      "service": "Rekognition"
-    },
-    "identifyText832e7774": {
-      "dependsOn": [],
-      "identifyType": "identifyText",
-      "providerPlugin": "awscloudformation",
-      "service": "Rekognition"
-    },
-    "interpretText5fdabf67": {
+    "interpretText0095be57": {
       "interpretType": "interpretText",
       "providerPlugin": "awscloudformation",
       "service": "Comprehend"
     },
-    "speechGenerator6caebe87": {
+    "speechGeneratord0e50bae": {
       "convertType": "speechGenerator",
       "providerPlugin": "awscloudformation",
       "service": "Polly"
     },
-    "translateText719c57ac": {
+    "translateTextaf41735b": {
       "convertType": "translateText",
       "providerPlugin": "awscloudformation",
       "service": "Translate"
