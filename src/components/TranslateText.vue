@@ -1,9 +1,15 @@
 <template>
   <div class="left">
-    <textarea class="ioarea" v-model="inputText" placeholder="Type to translate."></textarea>
+    <textarea class="ioarea" v-model="inputText" placeholder="入力して翻訳する。"></textarea>
+  </div>
+  <div class="middle">
+    <textarea class="ioarea" v-model="translatedText" disabled></textarea>
   </div>
   <div class="right">
-    <textarea class="ioarea" v-model="translatedText" disabled> </textarea>
+    <form>
+      <input v-model="translatedText" />
+      <button type = "button" @click="speech">Speech</button>
+    </form>
   </div>
 </template>
 
@@ -11,10 +17,12 @@
 import { Predictions } from 'aws-amplify';
 import { ref, watch } from 'vue';
 
+
+
 export default {
   setup() {
     const inputText = ref('');
-    const translatedText = ref('翻訳する文字列');
+    const translatedText = ref('Translation result.');
 
     const translate = (text) => {
       if (!text.length) {
@@ -39,6 +47,28 @@ export default {
       // ↑↑↑↑↑↑
     };
 
+    const speech = () => {
+      Predictions.convert({
+        textToSpeech:{
+          source:{
+            text: translatedText.value,
+          },
+        },
+      })
+        .then((result1)=>{
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          const audioCtx = new AudioContext();
+          const source = audioCtx.createBufferSource();
+
+          audioCtx.decodeAudioData(result1.audioStream, (buffer) => {
+            source.buffer = buffer;
+            source.connect(audioCtx.destination);
+            source.start(0);
+        });
+      })
+      .catch((error) => console.warn(error));
+    };
+
     watch(inputText, (inputText) => {
       translate(inputText);
     });
@@ -47,6 +77,7 @@ export default {
       inputText,
       translatedText,
       translate,
+      speech,
     };
   },
 };

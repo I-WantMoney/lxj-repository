@@ -75,12 +75,12 @@
       "providerPlugin": "awscloudformation",
       "service": "Comprehend"
     },
-    "speechGeneratord0e50bae": {
+    "speechGenerator475638bf": {
       "convertType": "speechGenerator",
       "providerPlugin": "awscloudformation",
       "service": "Polly"
     },
-    "translateTextaf41735b": {
+    "translateText857fb60f": {
       "convertType": "translateText",
       "providerPlugin": "awscloudformation",
       "service": "Translate"

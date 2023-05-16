@@ -1,11 +1,11 @@
 <template>
   <input id="check1" class="check" type="radio" name="ai" />
-  <label class="label" for="check1"> Translate - Amazon Translate </label>
+  <label class="label" for="check1"> Translate & Speech - Amazon Translate & Speech </label>
   <div class="content">
     <TranslateText />
   </div>
 
-  <input id="check2" class="check" type="radio" name="ai" />
+  <!-- <input id="check2" class="check" type="radio" name="ai" />
   <label class="label" for="check2"> Indentify Labels - Amazon Rekognition </label>
   <div class="content">
     <IdentifyLabels />
@@ -15,26 +15,25 @@
   <label class="label" for="check3"> Indentify Text - Amazon Rekognition </label>
   <div class="content">
     <IdentifyText />
-  </div>
+  </div> -->
 
-  <input id="check4" class="check" type="radio" name="ai" />
-  <label class="label" for="check4"> Interpret Text - Amazon Comprehend </label>
+  <input id="check2" class="check" type="radio" name="ai" />
+  <label class="label" for="check2"> Interpret Text - Amazon Comprehend </label>
   <div class="content">
     <InterpretText />
   </div>
 
-  <input id="check5" class="check" type="radio" name="ai" />
-  <label class="label" for="check5"> Text to Speech - Amazon Polly </label>
+  <!-- <input id="check3" class="check" type="radio" name="ai" />
+  <label class="label" for="check3"> Text to Speech - Amazon Polly </label>
   <div class="content">
-    <!-- 追加 1-->
     <TextSpeech />
-  </div>
+  </div> -->
 </template>
 
 <script>
 import TranslateText from '@/components/TranslateText.vue';
-import IdentifyLabels from '@/components/IdentifyLabels.vue';
-import IdentifyText from '@/components/IdentifyText.vue';
+// import IdentifyLabels from '@/components/IdentifyLabels.vue';
+// import IdentifyText from '@/components/IdentifyText.vue';
 import InterpretText from '@/components/InterpretText.vue';
 // 追加 2
 import TextSpeech from '@/components/TextSpeech.vue';
@@ -42,8 +41,8 @@ import TextSpeech from '@/components/TextSpeech.vue';
 export default {
   components: {
     TranslateText,
-    IdentifyLabels,
-    IdentifyText,
+    // IdentifyLabels,
+    // IdentifyText,
     InterpretText,
     // 追加 3
     TextSpeech,

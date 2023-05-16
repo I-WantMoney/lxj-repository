@@ -19,12 +19,30 @@
         "lxjproject": {}
       },
       "predictions": {
-        "translateTextaf41735b": {},
         "interpretText0095be57": {},
-        "speechGeneratord0e50bae": {}
+        "speechGenerator475638bf": {},
+        "translateText857fb60f": {}
       },
       "geo": {
         "map83905fe4": {}
+      }
+    }
+  },
+  "env": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lxjproject-env-170859-authRole",
+      "UnauthRoleArn": "arn:aws:iam::047403811176:role/amplify-lxjproject-env-170859-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::047403811176:role/amplify-lxjproject-env-170859-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-lxjproject-env-170859-deployment",
+      "UnauthRoleName": "amplify-lxjproject-env-170859-unauthRole",
+      "StackName": "amplify-lxjproject-env-170859",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:047403811176:stack/amplify-lxjproject-env-170859/eb90a8f0-f3c0-11ed-b992-0661aa13e5b1",
+      "AmplifyAppId": "d2a1r4fenv656f"
+    },
+    "categories": {
+      "auth": {
+        "lxjproject7d68c0a7": {}
       }
     }
   }
